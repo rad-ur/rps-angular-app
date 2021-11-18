@@ -1,0 +1,80 @@
+.frame {
+  border-radius: 50%;
+  width: 22vh;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 6vh;
+  background-color: #e5e7eb;
+  border: 2.5vh solid;
+  box-shadow: 0 0.8vh, inset 0 0.8vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hand-image {
+  height: 50%;
+  align-self: center;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.frame:active .hand-image {
+  height: 49%;
+  transition: width 0.2s, height 0.2s;
+}
+
+
+.scissors {
+  box-shadow: 0 0.8vh #1d4ed8, inset 0 0.8vh #1d4ed8;
+  border-color: #2563eb;
+}
+
+.scissors:active {
+  box-shadow: 0 0 #1d4ed8;
+  transition: box-shadow 0.2s;
+}
+
+.rock {
+  box-shadow: 0 0.8vh #a4161a, inset 0 0.8vh #a4161a;
+  border-color: #ba181b;
+}
+.rock:active {
+  box-shadow: 0 0 #a4161a;
+  transition: box-shadow 0.2s;
+}
+
+.paper {
+  box-shadow: 0 0.8vh #2b9348, inset 0 0.8vh #2b9348;
+  border-color: #55a630;
+}
+.paper:active {
+  box-shadow: 0 0 #2b9348;
+  transition: box-shadow 0.2s;
+}
+
+@media screen and (orientation: portrait) {
+  .frame {
+    border-radius: 50%;
+    width: 22vw;
+    height: 22vw;
+    border-width: 2.5vw;
+    margin-top: 6vw;
+  }
+
+  .scissors {
+    box-shadow: 0 0.8vw #1d4ed8, inset 0 0.8vw #1d4ed8;
+  }
+
+  .paper {
+    box-shadow: 0 0.8vw #2b9348, inset 0 0.8vw #2b9348;
+  }
+
+  .rock {
+    box-shadow: 0 0.8vw #a4161a, inset 0 0.8vw #a4161a;
+  }
+}

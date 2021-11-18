@@ -1,0 +1,32 @@
+.header {
+  width: 50vw;
+  border: 1px solid #e5e7eb;
+  border-radius: 2vh;
+  height: 18vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  top: 5vh;
+}
+
+.rps-img {
+  align-self: center;
+  margin-left: 1vh;
+  width: 24vh;
+}
+
+@media screen and (orientation: portrait) {
+  .header {
+    height: 18vw;
+    border-radius: 2vw;
+    width: 65vw;
+    top: 5vw;
+  }
+  .rps-img {
+    width: 24vw;
+    margin-left: 1vw;
+  }
+}

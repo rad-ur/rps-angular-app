@@ -1,0 +1,15 @@
+
+.button-container{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vh;
+}
+
+@media screen and (orientation:portrait){
+    .button-container{
+        margin-right: 2vw;
+    }
+    
+}

@@ -1,0 +1,26 @@
+<div @fadeIn class="container">
+  <div class="pick">
+    <h3>YOU PICKED</h3>
+    <app-hand
+      class="item1"
+      [className]="pickedHand"
+    ></app-hand>
+  </div>
+  <div *ngIf="showHand ? true : false" class="message-outcome">
+    <h3>{{ message }}</h3>
+    <button class="play-again-button" (click)="resetHandHandler()">
+      PLAY AGAIN
+    </button>
+  </div>
+
+  <div class="house">
+    <h3>THE HOUSE PICKED</h3>
+    <div *ngIf="showHand ? false : true" class="countdown-frame">
+      <p class="text">{{ count }}</p>
+    </div>
+    <app-hand
+      *ngIf="showHand ? true : false"
+      [className]="housePick"
+    ></app-hand>
+  </div>
+</div>

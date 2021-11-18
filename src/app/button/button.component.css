@@ -1,0 +1,29 @@
+.button{
+    border-radius: 2vh;
+    background-color: transparent;
+    border:2px solid #6B7280;
+    text-align: center;
+    width: 18vh;
+    height:7vh;
+    color: #6B7280;
+    cursor: pointer;
+    margin: 2vh;
+    transition: border-color 0.2s,color 0.2s;
+    font-size: 2.7vh;
+}
+
+.button:hover{
+border-color: #9CA3AF;
+    color: #9CA3AF;
+    transition: border-color 0.3s,color 0.3s;
+}
+
+@media screen and (orientation:portrait){
+    .button{
+        border-radius: 2vw;
+    width: 18vw;
+    height:7vw;
+    margin:2vw;
+    font-size: 2.7vw;
+    }
+}

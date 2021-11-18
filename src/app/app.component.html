@@ -1,0 +1,16 @@
+<app-modal ></app-modal>
+<app-header></app-header>
+<app-display-hands
+  *ngIf="pickedHand ? false : true"
+  (pick)="setPickedHand($event)"
+></app-display-hands>
+<app-outcome
+  *ngIf="pickedHand ? true : false"
+  (resetHand)="setPickedHand($event)"
+  [pickedHand]="pickedHand"
+></app-outcome>
+<div class="button-container">
+  <app-button (click)="showRulesHandler()" [buttonText]="'RULES'"></app-button
+  ><app-button [buttonText]="'RESET'" (click)="resetScore()"></app-button>
+</div>
+

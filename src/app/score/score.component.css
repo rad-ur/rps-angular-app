@@ -1,0 +1,43 @@
+.score {
+  background-color: #e5e7eb;
+  height: 16vh;
+  width: 15vh;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:host {
+  align-self: center;
+  margin-right: 1vh;
+}
+
+.score-text {
+  color: #4b5563;
+  font-size: 3vh;
+}
+.score-count {
+  color: #4b5563;
+  font-size: 5vh;
+}
+
+@media screen and (orientation: portrait) {
+  .score {
+    width: 15vw;
+    height: 16vw;
+    border-radius: 2vw;
+  }
+
+  .score-count {
+    font-size: 5vw;
+  }
+  .score-text {
+    font-size: 3vw;
+  }
+
+  :host {
+    margin-right: 1vw;
+  }
+}

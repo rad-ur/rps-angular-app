@@ -1,0 +1,23 @@
+.display-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+}
+
+.middle-item {
+  margin-top: 24vh;
+}
+
+@media screen and (orientation: portrait) {
+  .display-container {
+    height: 35vh;
+    margin-top: 6vh;
+    margin-bottom: 23vw;
+  }
+  .middle-item {
+    margin-top: 24vw;
+  }
+}

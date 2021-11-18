@@ -1,0 +1,15 @@
+<div [@fadeOut]="animationState" class="display-container">
+  <app-hand
+    (pick)="receivePick($event)"
+    [className]="'scissors'"
+  ></app-hand>
+  <app-hand
+    (pick)="receivePick($event)"
+    class="middle-item"
+    [className]="'paper'"
+  ></app-hand>
+  <app-hand
+    (pick)="receivePick($event)"
+    [className]="'rock'"
+  ></app-hand>
+</div>

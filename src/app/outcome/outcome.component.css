@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+}
+
+.pick {
+  margin-right: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.house {
+  margin-left: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3vh;
+}
+
+.play-again-button {
+  border: none;
+  border-radius: 1vh;
+  margin: 1vh;
+  padding: 1.5vh;
+  line-height: 3vh;
+  font-size: 3vh;
+  height: 6vh;
+  width: 28vh;
+  color: #4b5563;
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.message-outcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.text {
+  line-height: 18vh;
+  font-size: 15vh;
+  text-align: center;
+}
+
+.countdown-frame {
+  border-radius: 50%;
+  width: 22vh;
+  height: 22vh;
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  border: 2.5vh solid #374151;
+  background-color: #4b5563;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    height: 35vh;
+    margin-top: 6vh;
+    margin-bottom: 23vw;
+  }
+  .countdown-frame {
+    width: 22vw;
+    height: 22vw;
+    border-width: 2.5vw;
+    margin-top: 6vw;
+  }
+
+  .countdown {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .text {
+    line-height: 18vw;
+    font-size: 15vw;
+  }
+
+  .play-again-button {
+    border-radius: 1vw;
+    margin: 1vw;
+    padding: 1.5vw;
+    font-size: 2.5vw;
+    height: 6vw;
+    width: 26vw;
+    line-height: 3vw;
+  }
+
+  h3 {
+    font-size: 2.5vw;
+  }
+
+  .pick {
+    margin-right: 5vw;
+  }
+
+  .house {
+    margin-left: 5vw;
+  }
+
+  .message-outcome {
+    align-self: flex-start;
+    margin-top: 17vw;
+  }
+}
+
